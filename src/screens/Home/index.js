@@ -1,24 +1,29 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import {SafeAreaView} from 'react-native-safe-area-context';
-import { FontAwesome, AntDesign} from '@expo/vector-icons';
+import { StyleSheet, Text, TouchableOpacity } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { FontAwesome } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 
 export default function Home() {
-    const navigation = useNavigation();
+  const navigation = useNavigation();
+
   return (
-   <SafeAreaView style={styles.container}>
-    <StatusBar style='auto'/>
-    <Text> Tela Inicial</Text>
+    <SafeAreaView style={styles.container}>
+      <StatusBar style="auto" />
 
+      <Text style={styles.titulo}>Tela Inicial</Text>
 
-  <TouchableOpacity onPress={() => navigation.navigate('Produtos')}>
-    <Text>
-      Ir para página produtos
-    </Text>
-  </TouchableOpacity>
+      <TouchableOpacity 
+        style={styles.botao}
+        onPress={() => navigation.navigate('Produtos')}
+      >
+        <FontAwesome name="shopping-cart" size={20} color="#fff" />
+        <Text style={styles.textoBotao}>
+          Ir para Produtos
+        </Text>
+      </TouchableOpacity>
 
-   </SafeAreaView>
+    </SafeAreaView>
   );
 }
 
@@ -29,18 +34,26 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  botao: {
-  backgroundColor: '#2563EB',
-  paddingVertical: 12,
-  paddingHorizontal: 20,
-  borderRadius: 8,
-  marginTop: 20,
-},
 
-textoBotao: {
-  color: '#fff',
-  fontWeight: 'bold',
-  fontSize: 16,
-},
-    
+  titulo: {
+    fontSize: 22,
+    fontWeight: 'bold',
+  },
+
+  botao: {
+    backgroundColor: '#2563EB',
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    borderRadius: 8,
+    marginTop: 20,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+
+  textoBotao: {
+    color: '#fff',
+    fontWeight: 'bold',
+    fontSize: 16,
+    marginLeft: 10, 
+  },
 });
