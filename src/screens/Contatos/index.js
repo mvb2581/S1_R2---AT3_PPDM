@@ -19,11 +19,11 @@ export default function Contatos() {
         <Text style={styles.texto}>WhatsApp: (19) 98888-8888</Text>
       </TouchableOpacity>
 
-      <Text style={styles.texto}>Campinas - SP</Text>
+      <Text style={styles.texto}>Sumaré - SP</Text>
       <Text style={styles.texto}>CNPJ: 12.345.678/0001-99</Text>
 
       <TouchableOpacity onPress={() => Alert.alert('Email')}>
-        <Text style={styles.texto}>contato@empresa.com</Text>
+        <Text style={styles.texto}>exemplo@gmail.com</Text>
       </TouchableOpacity>
       
       <TouchableOpacity 
@@ -63,9 +63,16 @@ const styles = StyleSheet.create({
     marginTop: 10,
     backgroundColor: 'blue',
     padding: 8,
+    borderRadius: 8
   },
 
   botaoTexto: {
     color: '#fff',
+  },
+  titulo: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 20,
+    color: '#2563EB',
   }
 });

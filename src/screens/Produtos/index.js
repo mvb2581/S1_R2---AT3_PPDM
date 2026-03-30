@@ -48,7 +48,7 @@ export default function Produtos() {
 
         <View style={styles.card}>
           <Image 
-            source={{ uri: "https://images.unsplash.com/photo-1511732351661-1f8a3c1f9d6c" }} 
+            source={{ uri: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=500&q=60" }} 
             style={styles.img}
           />
           <Text>Relógio Smart</Text>
@@ -64,7 +64,7 @@ export default function Produtos() {
 
         <View style={styles.card}>
           <Image 
-            source={{ uri: "https://images.unsplash.com/photo-1606813902914-6b1f0c1c1c1c" }} 
+            source={{ uri: "https://images.unsplash.com/photo-1575361204480-aadea25e6e68?auto=format&fit=crop&w=500&q=60" }}
             style={styles.img}
           />
           <Text>Bola de futebol</Text>

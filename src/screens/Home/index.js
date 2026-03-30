@@ -29,4 +29,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  botao: {
+  backgroundColor: '#2563EB',
+  paddingVertical: 12,
+  paddingHorizontal: 20,
+  borderRadius: 8,
+  marginTop: 20,
+},
+
+textoBotao: {
+  color: '#fff',
+  fontWeight: 'bold',
+  fontSize: 16,
+},
+    
 });
